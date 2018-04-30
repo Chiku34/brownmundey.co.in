@@ -1,0 +1,35 @@
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions:
+  - with_toc_data
+
+excerpt_separator: <!-- more -->
+exclude:
+- index.html
+- README.md
+
+
+gems: [jekyll-sitemap]
+
+sass:
+  sass_dir: assets/_sass
+
+permalink: pretty
+tag_dir: tags
+tag_title_prefix: "#"
+
+# use where a full URL is appropriate (e.g. RSS, OG tags)
+url: http://brownmundey.co.in
+
+# metadata
+title: 18F Digital Services Delivery
+description: "18F builds effective, user-centric digital services focused on the interaction between government and the people and businesses it serves."
+
+# blog archive at /news
+paginate: 5
+paginate_path: "Home.html"
+
+rss_limit: 20
+
+future: false
