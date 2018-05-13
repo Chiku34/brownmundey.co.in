@@ -1,424 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>BrownMundey</title>
-  <link rel = "icon" type = "image/png" href = "images/logo__bm.png" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+        <title>Brown Mundey Live Entertainment Organization</title>
+        <link rel = "icon" type = "image/png" href = "images/logo.png" sizes="16x16"/>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    
-    /* Add a gray background color and some padding to the footer */
-    .footer {
-      background-color: #f2f2f2;
-      padding: 100px;
-    }
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    
-  .carousel-inner img {
-      width: 80%; /* Set width to 100% */
-      margin: auto;
-      min-height:100px;
-  }
+        <style>
+            
 
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
-    }
-  }
+            .navbar{
 
-   .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-  }
-  .navbar {
-      padding-top: 10px;
-      padding-bottom: 5px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 3px;
-  }
-  .navbar-nav  li a:hover {
-      color: #1abc9c !important;
-  }
-  .bg-1 { 
-      background-color: #1abc9c; /* Green */
-      color: #ffffff;
-  }
-  .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-  }
-  .bg-3 { 
-      background-color: #ffffff; /* White */
-      color: #555555;
-  }
-  .bg-4 { 
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-  }
+                margin-bottom: 0;
+                border-radius: 0;
+                background-color: #474e5d;
+                
+                padding: 1% 0;
+                
+                border:0;
+                font-size: 12px;
+                letter-spacing: 2px;
+            }
+            .navbar-brand{
+                float:left;
+                min-height:55px;
+                padding: 15px 15px 15px;
+            }
+            .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
+                    color:#FFF;
+                    background-color:#474e5d;
+            }
 
-.dropdown {list-style: none;  display: inline-block;}
-.dropdown .nav-link {color:#fff; text-decoration: none;}
-.dropdown .btn:hover {background: cyan; color:#000;}
-.dropdown .btn:active {background: cyan; color:#000;}
+            .navbar-inverse .navbar-nav li a{
+                color:#D5D5D5;
+            }
 
-
-  .navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
-    background-color: #3344ff;
-    color:#A52A2A;
-  }
-/* background-color: #82caff; */
- .dropdown-item {display: inline-block; width: 100%; padding: 10px 5px;}
-.container .dropdown a:hover
-{
-  
-  background-color: #b91773;
-  border-color: #fff;
-}
-  @media screen and (max-width: 768px) {
-          .side-collapse-container{
-              width:100%;
-              position:relative;
-              left:0;
-              transition:left .4s;
+            .carousel-inner img {
+              width: 80%; /* Set width to 100% */
+              margin: auto;
+              min-height:100px;
           }
-          .side-collapse-container.out{
-              left:200px;
+
+          @media only screen and (min-width: 480px) and (max-width: 700px) {
+            .carousel-inner img{
+              width:200%;
+              max-height: 200% !important;
+
+            }
+            .items{
+                    float: right !important;
+                  }
           }
-          .side-collapse {
-              top:50px;
-              bottom:0;
-              left:0;
-              width:200px;
-              position:fixed;
-              overflow:hidden;
-              transition:width .4s;
+          .bg-2 { 
+              background-color: #474e5d; /* Dark Blue */
+              color: #ffffff;
+              padding-bottom: 1em;
           }
-          .side-collapse.in {
-              width:0;
+          .bg-3 { 
+              background-color: #ffffff; /* White */
+              color: #555555;
           }
-    .h1 {
-  text-align: center;
-  margin: 40px 0;
-  font-size: 40px;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.slick-slide .inner {
-  margin: 0 15px;
-}
+
+           .carousel-caption {
+                top:50%;
+                transform: translateY(-50%);
+                text-transform: uppercase;
+            }
+            
+            .btn{
+                font-size: 18px;
+                color:#FFF; 
+                padding: 12px 22px;
+                background-color:#A0522D; 
+            } 
+
+            
+            #icon{
+                width:100% ;
+                height: 150px;
+            }
+
+            .dropdown {list-style: none;  display: inline-block;}
+            .dropdown .nav-link {color:#fff; text-decoration: none;}
+            .dropdown .btn:hover {background: #474e5d; color:#000;}
+            .dropdown .btn:active {background: #474e5d; color:#000;}
 
 
-section {
-    padding: 60px 0;
-}
+            footer{
+                width:100%;
+                background-color:#000000;
+                padding:2%;
+                color:brown;
+                letter-spacing:2px; 
+                
+            }
+            .fa{
+                padding: 15px;
+                font-size:15px;
+                color:brown;
+            }
+            .fa:hover{
+                color:#D5D5D5;
+                font-size:30px;
+                text-decoration: none;  
+            }
 
-section .section-title {
+            @media (max-width: 600px){
+                .fa{
+                    font-size: 10px;
+                    padding:10px;
+                }
+
+            }
+            @media (max-width: 600px){
+                .carousel-caption{
+                    display: none;
+                }
+                .carousel{
+                    display:relative;
+                }
+                #icon{
+                    max-width: 150px;
+                }
+                .h4{
+                    font-size:80%;
+                    color:brown;
+                }
+                
+
+            }
+
+
+            .dropdown-item {display: inline-block; width: 100%; padding: 10px 5px;text-decoration:none;}
+            .dropdown a:hover
+                {
+                  background-color: #474e5d;
+                  
+                }
+
+                @media screen and (max-width: 600px){
+                    .side-collapse-container{
+                      width:100%;
+                      position:relative;
+                      left:0;.
+                      transition:left .4s;
+                  }
+                  .side-collapse-container.out{
+                      left:200px;
+                  }
+                   .side-collapse.in {
+                          width:0;
+                      }
+                  .side-collapse {
+                      top:50px;
+                      bottom:0;
+                      left:0;
+                      width:200px;
+                      position:fixed;
+                      overflow:hidden;
+                      transition:width .4s;
+                  }
+                    .slick-slide .inner {
+                          margin: 0 15px;
+                        }
+
+                }
+                
+               
+
+.ApplyForm {
+    height: 80px;
+    width: 180px;
+    cursor: pointer;
+    margin: 10px auto;
+}
+.ApplyForm .outer {
+    position: relative;
+    width: 150%;
+    height: 120%;
+    padding: 10px;
+    background: rgba(0,0,0,0.65);
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    box-shadow: inset rgba(0,0,0,0.85) 0px 1px 5px;
+    -webkit-box-shadow: inset rgba(0,0,0,0.85) 0px 1px 5px;
+    -moz-box-shadow: inset rgba(0,0,0,0.85) 0px 1px 5px;
+    -webkit-transform: perspective(500px) rotateX(35deg);
+    -moz-transform: perspective(500px) rotateX(35deg);
+}
+.ApplyForm .outer .height {
+    position: relative;
+    height: 100%;
+
+    margin-top: -15px;
+    padding-bottom: 15px;
+    background: #39a02d;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    box-shadow: rgba(0,0,0,0.85) 0px 1px 1px, inset rgba(0,0,0,0.35) 0px -2px 8px;
+    -webkit-box-shadow: rgba(0,0,0,0.85) 0px 1px 1px, inset rgba(0,0,0,0.35) 0px -2px 8px;
+    -moz-box-shadow: rgba(0,0,0,0.85) 0px 1px 1px, inset rgba(0,0,0,0.35) 0px -2px 8px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+}       
+.ApplyForm:hover .outer .height {
+    margin-top: -10px;
+    padding-bottom: 10px;
+    background: #3aaf2d;
+    box-shadow: rgba(0,0,0,0.25) 0px 1px 1px, inset rgba(0,0,0,0.35) 0px -2px 6px;
+    -webkit-box-shadow: rgba(0,0,0,0.25) 0px 1px 1px, inset rgba(0,0,0,0.35) 0px -2px 6px;
+    -moz-box-shadow: rgba( 0,0,0,0.25) 0px 1px 1px, inset rgba(0,0,0,0.35) 0px -2px 6px;
+}
+.ApplyForm:active .outer .height {
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+.ApplyForm .outer .height .inner {
+    line-height: 2.2em;
+    font-family:impact;
+    font-size: 30px;
+    letter-spacing: .05em;
+    position: relative;
+    height: 100%;
     text-align: center;
-    color: #007b5e;
-    margin-bottom: 50px;
-    text-transform: uppercase;
+    text-shadow: #8aff7b 0px 0px 1px;
+    background: #44d135;
+    background: -moz-linear-gradient(top, #80ec75 0%, #43d034 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#80ec75), color-stop(100%,#43d034)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #80ec75 0%,#43d034 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(top, #80ec75 0%,#43d034 100%); /* W3C */
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    box-shadow: inset rgba(255,255,255,0.85) 0px 0px 1px;
+    -webkit-box-shadow: inset rgba(255,255,255,0.85) 0px 0px 1px;
+    -moz-box-shadow: inset rgba(255,255,255,0.85) 0px 0px 1px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
 }
-#footer {
-    background: #007b5e !important;
+.ApplyForm:hover .outer .height .inner{
+    text-shadow: #99f48d 0px 0px 1px;
+    background: #43d034; /* Old browsers */
+    background: -moz-linear-gradient(top, #43d034 0%, #67e45c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#43d034), color-stop(100%,#67e45c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #43d034 0%,#67e45c 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(top, #43d034 0%,#67e45c 100%); /* W3C */
 }
-#footer h5{
-    padding-left: 10px;
-    border-left: 3px solid #eeeeee;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-    color:#ffffff;
+.ApplyForm:active .outer .height .inner{
+    text-shadow: #319926 0px 1px 0px;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    box-shadow: inset rgba(0,0,0,0.9) 0px 0px 8px;
+    -webkit-box-shadow: inset rgba(0,0,0,0.9) 0px 0px 8px;
+    -moz-box-shadow: inset rgba(0,0,0,0.9) 0px 0px 8px;
+    background: #1d7d12; /* Old browsers */
+    background: -moz-linear-gradient(top, #1d7d12 0%, #4fd342 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1d7d12), color-stop(100%,#4fd342)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #1d7d12 0%,#4fd342 100%); /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(top, #1d7d12 0%,#4fd342 100%); /* W3C */
 }
-#footer a {
-    color: #ffffff;
-    text-decoration: none !important;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
-
-  </style>
-<script>
+        </style>
+    <script>
   $(document).ready(function() {   
             var sideslider = $('[data-toggle=collapse-side]');
             var sel = sideslider.attr('data-target');
-            var sel2 = sideslider.attr('data-target-2');
+            var sel2 = sideslider.attr('data-target-2');  
             sideslider.click(function(event){
                 $(sel).toggleClass('in');
                 $(sel2).toggleClass('out');
             });
         });
-
-
+  
 </script>
-</head>
+    </head>
+
+
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
+        <div class ="container">
+            <div class ="navbar-header">
+                <button type="button" class ="navbar-toggle pull-left" data-target=".side-collapse" data-target-2=".side-collapse-container"  data-toggle="collapse-side">
+                    <span class="icon-bar" style="color:brown;"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-<nav class="navbar navbar-inverse  navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle pull-left" data-target=".side-collapse" data-target-2=".side-collapse-container"  data-toggle="collapse-side" >
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Brown Mundey</a>
-    </div>
-    <div class="navbar-inverse side-collapse in" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right" style="margin-left:15px;">
-        <li ><a href="#">Home</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="EventDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events </a>
-              <div class="dropdown-menu dropdown-primary my-drop-down-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut" aria-labelledby="navbarDropdownMenuLink" style="margin-left:15px;">
-                <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Current Event</a>
-                <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Upcoming Button</a>
-                <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Previous Button</a>
-              </div>
-            </li>
-          
-        <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="EventDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-facetime-video"></span>Videos </a>
-              <div class="dropdown-menu dropdown-primary my-drop-down-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut" aria-labelledby="navbarDropdownMenuLink" style="margin-left:15px;">
-                <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Songs</a>
-                <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Events Video</a>
-                <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Short Movies</a>
-              </div>
-        </li>
-        
-        <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="EventDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PortFolio</a>
-              <div class="dropdown-menu dropdown-primary my-drop-down-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut" aria-labelledby="navbarDropdownMenuLink" style="margin-left:15px;">
-                <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Event Photos</a>
-                <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Models Photos</a>
-                <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Photo Shoots</a>
-              </div>
-        </li>
-
-        <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="EventDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class=" mr-1"></i>Apply</a>
-              <div class="dropdown-menu dropdown-primary my-drop-down-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut" aria-labelledby="navbarDropdownMenuLink" style="margin-left:15px;">
-                <a class="dropdown-item" href="#" style = "letter-spacing: 0px;">Modelling Show</a>
-                <a class="dropdown-item" href="#" style = "letter-spacing: 0px;">Modelling Classes</a>
-                <a class="dropdown-item" href="#" style = "letter-spacing: 0px;">Acting/Dance Classes</a>
-              </div>
-        </li>
-              <li><a href="#">News</a></li>
-
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-      
-    </div>
-  </div>
-</nav>
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators ">
-      <li data-target="#myCarousel" data-slide-to="0" class="active "></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <!--style=" width:100%; height: 400px !important;"-->
-    <div class="carousel-inner" role="listbox" >
-      <div class="item active">
-      	<img src="images/Audition-Khargon.jpg"  style="width:100%; height: 400px; padding-top: 65px; ">
-        
-        <div class="carousel-caption">
-          <h3>Audition In Khargon</h3>
-          <p>Ms MP 2018</p>
-        </div>      
-      </div>
-
-      <div class="item">
-        <img src="images/Audition-Ujjain.jpg"  style="width:100%; height: 400px; padding-top: 65px;">
-        <div class="carousel-caption">
-          <h3>Audition In Ujjain</h3>
-          <p>Ms MP 2018</p>
-        </div>      
-      </div>
-       <div class="item">
-        <img src="images/00001.jpg" style="width:100%; height: 400px; padding-top: 65px;">
-        <div class="carousel-caption">
-          <h3>Greatest Modelling Event of this year</h3>
-          <p style="color:brown"></h4>Ms. MP 2K18 </p>
-        </div>      
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left " style="size:15px;" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" style="size:15px;"aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div>
-
-
-<marquee direction="left" style= "height:100%;width:100% "><h2 ><font color="red">***This Website is in Under Development you will see soon***</font></h2></marquee>
-
-
-<!-- Fit image in specified size -->
-
-<div class="container text-center">    
-  <h3 style = "text-align: left; color:brown;">Upcomming Event </h3><br>
-  <div class="row" >
-    <div class="col-sm-2 " >
-      <img src="images/FashionShow.png" class="img-responsive" style="width:100% ;height: 150px;">
-        <br>
-    </div>
-    <div class="col-sm-2" > 
-      <img src="https://placehold.it/150x80?text=NO_IMAGE" class="img-responsive" style="width:100% ;height: 150px;" alt="Not Available">
-        <br>
-    </div>
-
-    <div class="col-sm-2"> 
-      <img src="https://placehold.it/150x80?text=N0_IMAGE" class="img-responsive" style="width:100% ;height: 150px;"  alt="Not Available">
-       <br>
-    </div>
-    <div class="col-sm-2 pull-right" > 
-    <a href="#"><span class="fa fa-angle-double-right pull-right" style="font-size: 18px; top:25px"></span></a>
-    
-  </div>
-  </div>
-</div><br>
-
-<div class="container text-center">    
-  <h3 style = "text-align: left;color:brown;">Current Event</h3><br>
-  <div class="row">
-    <div class="col-sm-2">
-      <img src="https://placehold.it/150x80?text=NO_IMAGE" class="img-responsive" style="width:100% ;height: 150px;" alt="Not Available">
-      <br>
-    </div>
-    <div class="col-sm-2"> 
-      <img src="https://placehold.it/150x80?text=NO_IMAGE" class="img-responsive" style="width:100% ;height: 150px;" alt="Not Available"><br>
-      <br>
-    </div>
-    <div class="col-sm-2"> 
-      <img src="https://placehold.it/150x80?text=NO_IMAGE" class="img-responsive" style="width:100% ;height: 150px;" alt="Not Available">
-        <p></p>
-    </div>
-    <div class="col-sm-2 pull-right" > 
-    <a href="#"><span class="fa fa-angle-double-right pull-right" style="font-size: 18px; top:25px"></span></a>
-    
-  </div>
-  </div>
-</div><br>
-
-<div class="container text-center">    
-  <h3 style = "text-align: left;color:brown;">Previous Event</h3><br>
-  <div class="row">
-    <div class="col-sm-2">
-      <img src="https://placehold.it/150x80?text=NO_IMAGE" class="img-responsive" style="width:100% ;height: 150px;" alt="Not Available">
-      <br>
-    </div>
-
-    <div class="col-sm-2"> 
-      <img src="https://placehold.it/150x80?text=NO_IMAGE" class="img-responsive" style="width:100% ;height: 150px;" alt="Not Available"> 
-      <br>  
-    </div>
-    <div class="col-sm-2 pull-right" > 
-    <a href="#"><span class="fa fa-angle-double-right pull-right" style="font-size: 18px; top:25px"></span></a>
-  </div>
-    </div>
-
-  </div>
-
-</div><br>
-
-<!-- Desciption Of company -->
-
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin" style="color: brown; ">What Are the Things we do</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p><h4>Organizing Various kind of EVENT!</h4></p>
-      <img src="images/events_medium.jpg" class="img-responsive margin" style="width:100% ;height: 150px;" alt="Not Available">
-    </div>
-    <div class="col-sm-4"> 
-      <p><h4>Short Movies, Pre-Wedding Shoot, PortFolio<h4></p>
-      <img src="images/images2_mod.jpg" class="img-responsive margin" style="width:100% ;height: 150px;" alt="Not Available">
-    </div>
-    <div class="col-sm-4"> 
-      <p><h4>Customize T-shirt<h4></p>
-      <img src="images/images1.jpg" class="img-responsive margin" style="width:100% ;height: 150px;" alt="Not Available">
-    </div>
-  </div>
-</div>
-
-<!--./Description end-->
-
-
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Brown Mundey (BM) Organise a Fashion Show Event, live events, and We make a Short Movie, Songs Video. We are Hunting a Talents in All over the world Like Acting, Modelling etc </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
-</div>
-
-
-
-<!--Footer-->
-<section id ="footer">
-  <footer class="page-footer font-small pt-4 mt-4">
-
-    <!--Footer Links-->
-    <div class="container-fluid text-center bg-4 text-md-left">
-        <div class="row text-center text-xs-center text-sm-left text-md-left">
-
-            <!--First column-->
-            <div class="col-md-6 " style="letter-spacing:2px; color:brown">
-                
-                  <h5 class="text-uppercase"><a href="#" style="color:brown;">BrownMundey</a></h5>
-                 <p>Address: 929, BAJRANG NAGAR,<br>
-                   Indore, MP 452001</p>
+                <a class="navbar-brand" href = "#">Brown Mundey</a>
             </div>
 
-            <!-- Second Column-->
-            <div class="col-md-6 " >
-              <ul class="list-unstyled " >
-                        <li class="list-inline-item"><a href="#" style="color:brown; letter-spacing: 2px margin-left: auto;margin-right: auto;width:8em;"><i class="fa fa-angle-double-right " ></i>Home</a></li>
-                        <li class="list-inline-item"><a href="javascript:void();" style="color:brown; letter-spacing: 2px margin-left: auto;margin-right: auto;width:8em;"><i class="fa fa-angle-double-right "></i>About</a></li>
+            <div class = "navbar-inverse side-collapse in" id="MyNavBar">
+                <ul class ="nav navbar-nav navbar-right" style="margin-left:15px;">
 
-                        <li class="list-inline-item "><a href="javascript:void();" style="color:brown; letter-spacing: 2px margin-left: auto;margin-right: auto;width:8em;"><i class="fa fa-angle-double-right "></i>FAQ</a></li>
-                        <li class="list-inline-item"><a href="javascript:void();" style="color:brown; letter-spacing: 2px margin-left: auto;margin-right: auto;width:8em;"><i class="fa fa-angle-double-right "></i>Get Started</a></li>
-                        <li class="list-inline-item"><a href="javascript:void();" style="color:brown; letter-spacing: 2px margin-left: auto;margin-right: auto;width:8em;"><i class="fa fa-angle-double-right "></i>Videos</a></li><br><br>
+                    <li class ="active"><a href = "#" >Home</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="EventDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events </a>
+
+                        <div class="dropdown-menu dropdown-primary my-drop-down-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut" aria-labelledby="navbarDropdownMenuLink" style="margin-left:15px;">
+                            <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Current Event</a>
+                            <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Upcoming Button</a>
+                            <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Previous Button</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="EventDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-facetime-video" style="padding-left:2px;"></span> Videos </a>
+                        <div class="dropdown-menu dropdown-primary my-drop-down-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut" aria-labelledby="navbarDropdownMenuLink" style="margin-left:15px;">
+                            <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Songs</a>
+                            <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Events Video</a>
+                            <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Short Movies</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="EventDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PortFolio</a>
+                        <div class="dropdown-menu dropdown-primary my-drop-down-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut" aria-labelledby="navbarDropdownMenuLink" style="margin-left:15px;">
+                            <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Event Photos</a>
+                            <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Models Photos</a>
+                            <a class="dropdown-item" href="#" style = "letter-spacing: 2px;">Photo Shoots</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="EventDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class=" mr-1"></i>Apply</a>
+                        <div class="dropdown-menu dropdown-primary my-drop-down-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut" aria-labelledby="navbarDropdownMenuLink" style="margin-left:15px;">
+                            <a class="dropdown-item" href="src/ApplyModel.html" style = "letter-spacing: 0px;">Modelling Show</a>
+                            <a class="dropdown-item" href="#" style = "letter-spacing: 0px;">Modelling Classes</a>
+                            <a class="dropdown-item" href="#" style = "letter-spacing: 0px;">Acting/Dance Classes</a>
+                        </div>
+                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div id ="myCarousel" class="carousel slide" data-ride="carousel" style="padding-top:6%;">
+        <!-- Create Indicator -->
+        <ol class ="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class ="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" ></li>
+            <li data-target="#myCarousel" data-slide-to="2" ></li>
+        </ol>
+
+        <!-- For Slider -->
+        <div class="carousel-inner" role = "listbox" >
+            <div class ="item active">
+                <img src="images/00001.jpg" style=" width:100%; height: 350px !important;">
+                <div class="carousel-caption">
+                    <h2>Modeling Platform</h2>
+                    
+                    <br>
+                    <!-- <button type="button" class="btn btn-default">Get Started</button> -->
+                </div>
+            </div> <!-- End Active -->
+
+            <div class ="item" >
+                <img src = "images/Khargon.jpeg" style=" width:100%; height: 350px !important;">
+            </div>
+
+            <div class ="item">
+                <img src = "images/Ujjain.jpeg" style=" width:100%; height: 350px !important;"> 
+            </div>
+        </div>
+
+        <!-- Start Slide Controller -->
+            <a class = "left carousel-control" href = "#myCarousel" role="button" data-slide="prev" >
+                <span class ="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class ="sr-only">Previous</span>
+            </a>
+
+            <a class = "right carousel-control" href = "#myCarousel" role="button" data-slide="next" >
+                <span class ="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class ="sr-only">Next</span>
+            </a>
+
+    </div>  <!-- End Slider -->
+
+<marquee direction="left" style= "height:100%;width:100% "><h2 ><font color="red">***This Website is in Under Development ***</font></h2></marquee>
+
+
+    <!-- <center><strong><input type="button" value="Open Form" onclick="window.open('file/BM_Audition_Form.pdf');"size="20" class="newButton"/></strong></center> -->
+
+
+    <div class="ApplyForm">
+            <div class="outer">
+                <div class="height">
+                    <div class="inner"><a href="file/BM_Audition_Form.pdf" download="Application_Form">DownLoad Form</a></div>
+                </div>
+            </div>
+    </div>
+
+    <div class ="container " >
+        <h2 style = "text-align: left; color:brown;"> Upcoming Event</h2>
+        <div class="row" id="items">
+            <div class ="col-sm-2">
+                <img src="images/Khargon.jpeg" id ="icon" class="img-responsive " >
+                <h4 >Khargon Audition</h4>
+
+            </div>
+            <div class ="col-sm-2">
+                <img src="images/Ujjain.jpeg" id ="icon" class="img-responsive " >
+                <h4 >Ujjain Audition</h4>
+
+            </div>
+
+            <div class ="col-sm-2">
+                <img src="images/Model.jpg" id ="icon" class="img-responsive " >
+                <h4 >Madhya Pradesh Audition</h4>
+
+            </div>
+            <div class="col-sm-2 pull-right" > 
+                <a href="#"><span class="fa fa-angle-double-right pull-right" style="width:100% ;height: 150px;padding-top:20px"></span></a>
+    
+            </div>
+        </div>
+        <h2 style = "text-align: left; color:brown;"> Previous Event</h2>
+        <div class="row">
+                <div class ="col-sm-2">
+                    <img src="images/Indore.jpeg" id ="icon" class="img-responsive " >
+                    <h4 >Indore Audition</h4>
+                </div>
+                <div class="col-sm-2 pull-right" > 
+                    <a href="#"><span class="fa fa-angle-double-right pull-right" style="width:100% ;height: 150px;padding-top:20px;"></span></a>
+    
+                </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <!-- What are things we are doing  it will start from here-->
+
+    <div class="container">
+        <h2 style="color: brown; "><center>What Are the Things we do</center></h2><br>
+        <div class="row">
+            <div  class="col-md-6" ">
+                <h2><strong>Organizing Various kind of EVENT!</strong></h2>
+                    <p> BrownMundey is the most respected organization to organize Event , Entertainment and it has best photographer for Portfolio including it did pre-wedding and post-wedding shoot</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/BM_Event.png" class="img-responsive " style="width:100% ;height: 300px;">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/FilmMaking.jpg" class="img-responsive " style="width:100% ;height: 300px;">
+            </div>
+            <div class="col-md-6" style="padding-top : 100px;">
+                <h4><strong>Short Movies, Song, PortFolio</strong></h4>
+                    <p>Creativity is the heart of this Organization. We are involing in making of Short Movies and Songs. Just Contact with us and we will create best album and  video.</p>
+            </div>
+            
+        </div>
+        <br>
+        <div class="row">
+            
+            <div  class="col-md-6" style="padding-top : 100px;">
+                <h4><strong>Customize T-Shirt, Brown Mundey T-shirt, Shirt and Clothing.</strong></h4>
+                    <p>Create your own team t-shirt with custom option, We also sell Clothings.</p>
+            </div>
+            <div class="col-md-6" >
+                <img src="images/tshirt.jpg" class="img-responsive " style="width:100% ;height: 300px;">
+            </div>
+            
+        </div>
+
+    </div>
+    <br>
+    <div  class="container-fluid bg-2 text-center" >
+        <h3 class="margin">What Am I?</h3>
+        <p>Brown Mundey (BM) Organise a Fashion Show Event, live events, and We make a Short Movie, Songs Video. We are Hunting a Talents in All over the world Like Acting, Modelling etc </p>
+        <br>
+        <a href="#" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-search"></span> Search </a>
+    </div>
+
+    <!-- Footer Will start from Here -->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 text-center"  style="color:brown;letter-spacing:2px; margin-top:50px;">
+                
+                <h5 class="text-uppercase"><a href="#" style="color:brown;">BrownMundey</a></h5>
+                 <p >Address: 929, BAJRANG NAGAR,<br>
+                   Indore, MP 452001</p>
+            </div>          
+            
+            <div class="col-md-6"> 
+              <ul class="list-unstyled " >
+                        <li class="list-inline-item"><a href="javascript:void();" style="color:brown;text-decoration: none;margin-left:200px"><i class="fa fa-angle-double-right " ></i>Home</a></li>
+                        <li class="list-inline-item"><a href="#" style="color:brown;text-decoration: none;margin-left:200px"><i class="fa fa-angle-double-right "></i>About</a></li>
+
+                        <li class="list-inline-item "><a href="#" style="color:brown; text-decoration: none; margin-left:200px"><i class="fa fa-angle-double-right "></i>FAQ</a></li>
+                        <li class="list-inline-item"><a href="#" style="color:brown;text-decoration: none;margin-left:200px"><i class="fa fa-angle-double-right "></i>Cloths</a></li>
+                        <li class="list-inline-item"><a href="#" style="color:brown;text-decoration: none;margin-left:200px"><i class="fa fa-angle-double-right "></i>Videos</a></li><br>
               </ul>
             </div>
 
 
-            
-            <!--/Symbol column-->
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <ul class="list-unstyled list-inline social text-center">
-                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook-square" style="font-size:24px;color:brown;"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter" style="font-size:24px;color:brown;"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus" style="font-size:24px;color:brown;"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram" style = "font-size:24px;color:brown;"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope" style="font-size:24px;color:brown;"></i></a></li>
-                    </ul>
-                </div>
-            
         </div>
-    </div>
- 
-
-    <!--/.Footer Links-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <a href="#" class="fa fa-facebook-square"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google-plus"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <br>
+            </div>
+        </div>
+        <!--/.Footer Links-->
 
     <!--Copyright-->
     <div class="footer-copyright py-3 text-center" style="color:brown;">
@@ -426,9 +528,8 @@ section .section-title {
         <a href="#" style="color:brown;"> BrownMundey.co.in</a>
     </div>
     <!--/.Copyright-->
- </div>
-</footer>
-</section>
-<!--/.Footer-->
+    </footer>
 </body>
 </html>
+                                        
+<!--Brown Mundey Home Pages-->
